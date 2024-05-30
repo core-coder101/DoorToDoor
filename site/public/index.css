@@ -1,0 +1,498 @@
+/* index.css */
+
+
+@font-face {
+    font-family: 'myfont';
+    src: url('./ffont.ttf') format('truetype'); /* TrueType font format */
+}
+
+.container {
+    max-width: 1000px; /* Adjust as needed */
+    margin: 0 auto; /* Center horizontally */
+}  
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/*------------------------FOR LOGO---------------------------------*/
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/*------------------------END LOGO---------------------------------*/
+
+
+/*------------------------FOR NAVBAR---------------------------------*/
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+
+#navbar::before {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+
+#navbar ul {
+    display: flex;
+    font-family: "Baloo Bhai 2", cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: black;
+    display: block;
+    padding: 10px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: #ff5722;
+    background-color: white;
+}
+
+
+/*-----------------END NAVBAR--------------------*/
+
+
+/*-------------------Profile BUTTON----------------------*/
+
+.btn_profile {
+    padding: 6px 20px;
+    border: 0px solid white;
+    background-color: #ff5722;
+    color: black;
+    margin-top: -2px;
+    margin-left: 250px;
+    font-size: 1.3rem;
+    font-family: "Baloo Bhai 2", cursive;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.btn_profile:hover{
+    background-color: black;
+    color: #ff5722;
+}
+
+
+/*-------------------END BUTTON----------------------*/
+
+
+
+
+
+
+
+
+/*------------------------FOR HOME---------------------------------*/
+
+
+
+
+.nextcol {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#home h1 {
+    color: #ff5a28;
+    text-align: left;
+    font-family: "myfont";
+    /* padding: 40px; */
+    font-size: 130px;
+}
+
+.nextcol img {
+    display: inline;
+    width: 330px;
+    height: auto;
+}
+
+#home p {
+    color:black;
+    text-align: center;
+    font-family: "Baloo Bhai 2", cursive;
+    font-size: 1.3rem;
+}
+
+
+/*------------------------END HOME---------------------------------*/
+
+
+
+
+/*------------------------FOR MENU---------------------------------*/
+
+.h-menu{
+    margin-top: 100px;
+    font-family: "myfont";
+    font-size: 60px;
+    color: #ff5722;
+    text-align: center;
+}
+
+#services-container a {
+    text-decoration: none;
+    display: flex;  
+}
+#services {
+    margin: 34px;
+    display: flex;
+    max-width: 400px;
+}
+
+#services .box {
+    width: 130px;
+    height: 400px;
+    padding: 30px;
+    margin: 15px 25px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    justify-content: space-evenly;
+    box-shadow: 0 0 25px 3px rgba(0,0,0,0.75);
+    transition: all .3s ease-in-out;
+    display: inline-block;
+}
+#services .box:hover {
+    transform: scale(1.05);
+}
+
+#services .box img {
+    display: block;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    margin: auto;
+    height: 70px;
+    /* width: 100px; */
+    /* object-fit: fill; */
+    /* no-repeat center center/cover; */
+}
+
+#services .box h2 {
+    color: black;
+}
+
+#services .box p {
+    font-family: "Bree Serif", serif;
+    color: black;
+}
+
+.price{
+    font-family: "myfont";
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+
+/*------------------------END MENU---------------------------------*/
+
+
+/*-------------------------------FOR FOOTER------------------------*/
+
+.contact-footer {
+    color: black;
+    padding: 0px;
+    text-align: center;
+}
+
+.prevcol {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-form {
+    min-width: 380px;
+    margin: 0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-form h3 {
+    font-family: "myfont";
+    font-size: 60px;
+    color: #ff5722;
+}
+
+.contact-form form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgb(179, 179, 179);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.contact-form form button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.links {
+    display: inline;
+    padding:0px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.footer-links li {
+    margin: 37px;
+    margin-right: 300px;
+}
+
+.footer-links a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+}
+
+.footer-links a:hover {
+    color: #ff5722;
+}
+
+.links h2 {
+    font-family: "myfont";
+    font-size: 60px;
+    color: #ff5722;
+}
+
+/*---------------------------END FOOTER----------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*---------------------------CART----------------------------*/
+
+.empty-cart{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.color{
+    color: #ff5722;
+}
+.empty-cart p{
+    text-align: center;
+}
+.empty-cart h1{
+    text-align: center;
+}
+.heading{
+    font-size: 4.2rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.outer-cart-container{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cart-container{
+    display: flex;
+}
+
+.btn:hover {
+    background-color: #ff8855 !important;
+}
+
+.order-div{
+    display: flex;
+}
+.price{
+    font-family: "myfont";
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff5722;
+}
+.btn-color{
+    background-color: #ff5722 !important;
+    border: none !important;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quantity{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quantity input{
+    border-radius: 5rem;
+    padding: 10px;
+}
+.quantity label{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.my-btn{
+    padding: 10px !important;
+    border-radius: 5rem !important;
+}
+
+.img-div{
+    height: 50%;
+}
+
+.card-body h1{
+    text-align: center;
+    font-size: 2.5rem
+}
+.save-changes-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.save-changes-div button{
+    font-size: 1.5rem;
+    padding: 15px !important;
+}
+
+
+
+
+
+
+
+/*---------------------------PROFILE----------------------------*/
+
+.profile-outer-div{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img-div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img-div img{
+    width: 70%;
+    height: auto;
+}
+
+.profile-form-div{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-form-div form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-form-div input{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+}
+
+.profile-form-div button{
+    width: 100%;
+    border: none;
+    border-radius: 5rem;
+    background-color: #F33A00;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.profile-img-div button{
+    border: none;
+    border-radius: 5rem;
+    background-color: #F33A00;
+    margin-top: 50px;
+    padding: 15px;
+    font-size: 1.25rem;
+    color: white;
+}
+.profile-heading{
+    font-size: 4.2rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+    text-align: center;
+}
+

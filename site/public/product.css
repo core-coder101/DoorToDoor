@@ -1,0 +1,359 @@
+/* product.css */
+
+
+@font-face {
+    font-family: 'myfont';
+    src: url('./ffont.ttf') format('truetype'); /* TrueType font format */
+}
+
+.container {
+    max-width: 1000px; /* Adjust as needed */
+    margin: 0 auto; /* Center horizontally */
+}  
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/*------------------------FOR LOGO---------------------------------*/
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/*------------------------END LOGO---------------------------------*/
+
+
+/*------------------------FOR NAVBAR---------------------------------*/
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+
+#navbar::before {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+
+#navbar ul {
+    display: flex;
+    font-family: "Baloo Bhai 2", cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: black;
+    display: block;
+    padding: 10px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: #ff5722;
+    background-color: white;
+}
+
+
+.btn_profile {
+    padding: 6px 20px;
+    border: 0px solid white;
+    background-color: #ff5722;
+    color: black;
+    margin-top: -2px;
+    margin-left: 250px;
+    font-size: 1.3rem;
+    font-family: "Baloo Bhai 2", cursive;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.btn_profile:hover{
+    background-color: black;
+    color: #ff5722;
+}
+
+/*-----------------END NAVBAR--------------------*/
+
+
+
+/*-------------------Profile BUTTON----------------------*/
+
+.btn_profile {
+    padding: 6px 20px;
+    border: 0px solid white;
+    background-color: #ff5722;
+    color: black;
+    margin-top: -2px;
+    margin-left: 250px;
+    font-size: 1.3rem;
+    font-family: "Baloo Bhai 2", cursive;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.btn_profile:hover{
+    background-color: black;
+    color: #ff5722;
+}
+
+
+/*-------------------END BUTTON----------------------*/
+
+
+
+/*-------------------FOR HOW HUNGRY----------------------*/
+.hungryheading {
+    color: #ff5a28;
+    text-align: left;
+    font-family: "myfont";
+    /* padding: 40px; */
+    font-size: 40px;
+}
+/*-------------------END HOW HUNGRY----------------------*/
+
+
+/*-------------------FOR PRODUCT----------------------*/
+
+.h-menu{
+    margin-top: 100px;
+    font-family: "myfont";
+    font-size: 60px;
+    color: #ff5722;
+    text-align: center;
+}
+
+#product-container a {
+    text-decoration: none;
+}
+#product {
+    margin: 34px;
+    display: flex;
+}
+
+#product .box {
+    width: 800px;
+    padding: 30px;
+    margin: 15px 25px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    justify-content: space-evenly;
+    box-shadow: 0 0 25px 3px rgba(158, 158, 158, 0.75);
+    transition: all .3s ease-in-out;
+}
+
+#product .box:hover {
+    transform: scale(1.05);
+}
+
+#product .box img {
+    display: block;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    margin: auto;
+    height: 200px;
+    /* width: 100px; */
+    /* object-fit: fill; */
+    /* no-repeat center center/cover; */
+}
+
+#product .box h2 {
+    color: black;
+}
+
+#product .box p {
+    font-family: "Bree Serif", serif;
+    color: black;
+}
+
+.price{
+    font-family: "myfont";
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff5722;
+}
+/*------------------END PRODUCT----------------------*/
+
+
+/*-------------------FOR Quantity----------------------*/
+
+
+/* Style the buy-items section */
+#buy-items {
+    /* background-color: #f5f5f5; */
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/* Style the quantity label */
+#quantity label {
+    /* font-family: "myfont"; */
+    font-family: "Baloo Bhai 2", cursive;
+    font-size: 30px;
+    
+}
+
+/* Style the quantity input */
+#quantity input[type="number"] {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+}
+
+/* Style the items section */
+#items {
+    margin-top: 10px;
+}
+
+/* Style the Add to Cart button */
+.btn {
+    padding: 10px 200px;
+    border: 0px solid white;
+    background-color: #ff5722;
+    color: black;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 1.3rem;
+    font-family: "Baloo Bhai 2", cursive;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+/* Change button color on hover */
+.btn:hover {
+    background-color: black;
+    color: #ff5722;
+}
+
+/*-------------------END Quantity----------------------*/
+
+
+
+
+/*-------------------------------FOR FOOTER---------------------------------------*/
+
+.contact-footer {
+    color: black;
+    padding: 0px;
+    text-align: center;
+}
+
+.prevcol {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-form {
+    min-width: 380px;
+    margin: 0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-form h3 {
+    font-family: "myfont";
+    font-size: 60px;
+    color: #ff5722;
+}
+
+.contact-form form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgb(179, 179, 179);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.contact-form form button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.links {
+    display: inline;
+    padding:0px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.footer-links li {
+    margin: 37px;
+    margin-right: 300px;
+}
+
+.footer-links a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+}
+
+.footer-links a:hover {
+    color: #ff5722;
+}
+
+.links h2 {
+    font-family: "myfont";
+    font-size: 60px;
+    color: #ff5722;
+}
+
+
+
+/*-------------------------------END FOOTER---------------------------------------*/

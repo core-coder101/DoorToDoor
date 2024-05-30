@@ -1,0 +1,57 @@
+<%- include('./partials/header.ejs') %>
+
+
+
+
+
+
+
+
+    <section id="home">
+        <div class="nextcol">
+            <h1>Why Us ? </h1>
+            <img src="/chef.svg" alt="">
+        </div>
+        <p>We at Door Dash are a dedicated team that connects you with the best local restaurants for food delivery. </p>
+        <p>Whether you're craving pizza, sushi, or something else, we've got you covered.</p>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-menu">OUR MENU</h1>
+        <div id="services">
+            <% let i = 0 %>
+            <% while(i < 8){  %>
+                <% let product = products[i] %>
+            <a href="/details/<%=product.name%>">
+                <div class="box">
+                    <img src="<%=product.img%>" alt="">
+                    <h2 class="h-secondary center"><%=product.name%></h2>
+                    <p class="center"><%=product.description%></p>
+                    <div class="price">Rs <%=product.price%></div>
+                </div>
+            </a>
+            <% if(i == 3){ %>
+                    </div>
+                </section>
+
+                <section id="services-container">
+                    <div id="services">
+            <% } %>
+            <% i = i + 1 %>
+        <% } %>
+
+
+            
+        </div>
+    </section>
+    
+
+
+
+
+
+    
+<%- include('./partials/footer.ejs') %>
+
+
+

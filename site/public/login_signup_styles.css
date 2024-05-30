@@ -1,0 +1,93 @@
+:root{
+    --main-color: #ff5a28;
+}
+
+@font-face {
+    font-family: 'myfont';
+    src: url('./ffont.ttf') format('truetype'); /* TrueType font format */
+}
+
+.outer-div{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login{
+    font-family: 'myfont';
+    font-size: 10.2rem;
+    padding: 0;
+    margin: 0;
+    color: var(--main-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-signup-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-signup-form input{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.login-signup-form button{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5rem;
+    color: white;
+    background-color: var(--main-color);
+    transition: all .38s ease;
+}
+
+.login-signup-form button:hover{
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.login-signup-form a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.text-div h1{
+    text-align: justify;
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;
+}
+
+.color{
+    color: var(--main-color);
+}
+
+.text-div{
+    width:45%;
+}
+

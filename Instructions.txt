@@ -1,0 +1,11 @@
+TO START SERVER:
+(Make sure you are in the "site" folder in the Bash terminal,
+ this folder is already npm initialized with all dependencies)
+
+Just write: "nodemon app.js" in the Bash terminal and the
+server will start on port 3000.
+
+TO SETUP DATABASE:
+You can import the database using the provided exported
+database file, go to localhost/phpmyadmin and use the
+ import feature to import the database.
